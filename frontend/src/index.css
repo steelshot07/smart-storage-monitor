@@ -1,0 +1,28 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-primary: #0f1117;
+  --bg-card: #1a1d27;
+  --bg-card-hover: #1f2235;
+  --color-text: #e2e8f0;
+  --color-muted: #64748b;
+  --color-good: #22c55e;
+  --color-warn: #f59e0b;
+  --color-danger: #ef4444;
+  --color-accent: #6366f1;
+  --border: 1px solid #2d3148;
+  --radius: 12px;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--color-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+}

@@ -1,0 +1,126 @@
+.device-card {
+  background: var(--bg-card);
+  border: var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  transition: background 0.2s;
+}
+
+.device-card:hover {
+  background: var(--bg-card-hover);
+}
+
+.device-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.device-name {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.health-badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.health-badge.good {
+  background: #14532d;
+  color: var(--color-good);
+}
+
+.health-badge.warn {
+  background: #451a03;
+  color: var(--color-warn);
+}
+
+.health-badge.danger {
+  background: #450a0a;
+  color: var(--color-danger);
+}
+
+.device-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metric-label {
+  font-size: 11px;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metric-value {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.health-bar-container {
+  margin-top: 16px;
+  height: 4px;
+  background: var(--bg-primary);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.health-bar {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.6s ease;
+}
+
+.prediction {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: var(--border);
+}
+
+.prediction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.prediction-label {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.prediction-percent {
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+.prediction-message {
+  font-size: 13px;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .device-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gauge-wrapper svg {
+    max-width: 200px;
+  }
+}

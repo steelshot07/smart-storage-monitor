@@ -1,0 +1,17 @@
+.alert-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #451a03;
+  color: var(--color-warn);
+  border: 1px solid #92400e;
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.alert-icon {
+  font-size: 16px;
+}
+
