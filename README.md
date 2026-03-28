@@ -18,12 +18,17 @@ A full-stack storage health monitoring app with ML-based failure prediction.
 ### Backend
 cd backend
 python -m venv venv
-venv\Scripts\activate        # Windows
+venv\Scripts\activate  # Windows
+
 pip install -r requirements.txt
-python train.py              # trains the ML model
-uvicorn main:app --reload    # run as Administrator
+
+python train.py  # trains the ML model
+
+uvicorn main:app --reload             # run as Administrator
 
 ### Frontend
 cd frontend
+
 npm install
+
 npm run dev
